@@ -9,6 +9,9 @@
  *
  */
 #include "robot.h"
+#include "schneids14.h"
+
+
 
 /**
  * main()
@@ -33,6 +36,8 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
+
+  schneids14();
 
   return 0;
 }
