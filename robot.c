@@ -25,7 +25,7 @@ void robPrintMessage(int num)
 {
   int i = 0;
 
-  printf("Nathan Schmedake ");
+  printf("Seth Schneider and Nathan Schmedake ");
 
   for(i; i < num; i++)
     {
