@@ -9,6 +9,7 @@
  *
  */
 #include "robot.h"
+#include "schmedak15.h"
 
 /**
  * main()
@@ -33,6 +34,6 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
-
+  schmedak15();
   return 0;
 }
