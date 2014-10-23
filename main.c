@@ -24,21 +24,24 @@
 int main(int argc, const char * argv[])
 {
   // Check the command line arguments.
-  if(argc != 2) {
-    printf("usage: %s <number> \n", argv[0]);
+  if(argc != 1 && argc != 2) {
+    printf("usage: %s <number> or %s \n", argv[0], argv[0]);
     return -1;
   }
 
-  // Convert the command-line argument to a number.
-  int num = atoi(argv[1]);
-
   robPrintAscii();
 
-  robPrintMessage(num);
+  if  (argc == 2) {
 
-  schneids14();
+    // Convert the command-line argument to a number.
+    int num = atoi(argv[1]);
 
-  schmedak15();
+    robPrintMessage(num);
+
+    schneids14();
+
+    schmedak15();
+  }
 
   return 0;
 }
