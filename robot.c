@@ -10,7 +10,9 @@
  */
 
 #include "robot.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * robPrintMessage
  *
@@ -41,17 +43,20 @@ void robPrintMessage(int num)
  * robPrintAscii
  *
  */
-void robPrintAscii(void)
+void robPrintAscii(int num)
 {
   int i;
-  char* blank = "                              ";
-  blank = blank +30;
-  for(i = 0; i < 3; i++){
-   
+  char * start;
+  char * blank = "          ";
+  for(i = 0; i < num; i++){
+    if((start = malloc(strlen(blank)) + 1) != NULL){
+      strcat(start,blank);
+    }
+    printf("%s the space in start \n", start);
     printf("%s    i_i    \n"
 	   "%s   [X_&]   \n"
 	   "%s  /|___|\\ \n"
-	   "%s   d   b   \n",blank, blank, blank, blank);
+	   "%s   d   b   \n",start, start, start, start);
 
     blank = blank -10;
   }

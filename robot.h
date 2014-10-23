@@ -17,6 +17,6 @@
 #define _ROBOT_H
 
 void robPrintMessage(int num);
-void robPrintAscii(void);
+void robPrintAscii(int num);
 
 #endif
