@@ -43,9 +43,17 @@ void robPrintMessage(int num)
  */
 void robPrintAscii(void)
 {
-  printf("    i_i    \n"
-	 "   [X_&]   \n"
-	 "  /|___|\\  \n"
-         "   d   b   "); 
+  int i;
+  char* blank = "                              ";
+  blank = blank +30;
+  for(i = 0; i < 3; i++){
+   
+    printf("%s    i_i    \n"
+	   "%s   [X_&]   \n"
+	   "%s  /|___|\\ \n"
+	   "%s   d   b   \n",blank, blank, blank, blank);
+
+    blank = blank -10;
+  }
 
 }
